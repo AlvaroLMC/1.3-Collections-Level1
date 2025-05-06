@@ -1,24 +1,25 @@
 package Exercise2;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ListIterator;
 
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("lunes");
-        list.add("martes");
-        list.add("miercoles");
-        list.add("jueves");
-        list.add("viernes");
-        list.add("sabado");
-        list.add("domingo");
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
 
         System.out.println(list);
 
-        ArrayList<String> reverseList = new ArrayList<>();
+        ArrayList<Integer> reverseList = new ArrayList<>();
 
-        ListIterator<String> iterador = list.listIterator();
+        ListIterator<Integer> iterador = list.listIterator();
 
         while (iterador.hasNext()) {
             iterador.next();
